@@ -1,13 +1,14 @@
 name: "CLA Assistant"
-on:
-  pull_request_target:
-    types: [opened,closed,synchronize]
-  workflow_call:
-    secrets:
-      ZAP_CLA_PAT:
-        required: true
-        
-# explicitly configure permissions, in case your GITHUB_TOKEN workflow permissions are set to read-only in repository settings
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [opened,closed,synchronize]
+#   workflow_call:
+#     secrets:
+#       ZAP_CLA_PAT:
+#         required: true
+#         
+# # explicitly configure permissions, in case your GITHUB_TOKEN workflow permissions are set to read-only in repository settings
 permissions:
   actions: write
   contents: write

@@ -1,8 +1,9 @@
 name: Prepare Release Main Version
 
-on:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+# 
 jobs:
   prepare-release:
     name: Prepare Release

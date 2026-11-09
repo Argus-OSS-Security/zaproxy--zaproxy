@@ -1,9 +1,10 @@
 name: Release Weekly Docker
-on:
-  workflow_dispatch:
-  repository_dispatch:
-    types: 'release-weekly-docker'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   repository_dispatch:
+#     types: 'release-weekly-docker'
+# 
 jobs:
   publish:
     name: Build and Push Docker Image

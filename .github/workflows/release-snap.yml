@@ -1,10 +1,11 @@
 name: Release Snap
 
-on:
-  workflow_dispatch:
-  repository_dispatch:
-    types: 'release-snap'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   repository_dispatch:
+#     types: 'release-snap'
+# 
 jobs:
   release:
     name: Release

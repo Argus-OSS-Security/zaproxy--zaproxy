@@ -1,9 +1,10 @@
 name: "Pull Request Labeler"
-on:
-  pull_request_target:
-    types:
-    - opened
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types:
+#     - opened
+# 
 jobs:
   triage:
     permissions:

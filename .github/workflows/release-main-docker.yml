@@ -1,10 +1,11 @@
 name: Release Main Docker
 
-on:
-  workflow_dispatch:
-  repository_dispatch:
-    types: 'release-main-docker'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   repository_dispatch:
+#     types: 'release-main-docker'
+# 
 jobs:
   publish:
     name: Build and Push Docker Images

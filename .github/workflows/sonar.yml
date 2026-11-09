@@ -1,10 +1,11 @@
 name: Run Sonar
 
-on: 
-  schedule:
-    - cron: '30 15 * * SAT'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: 
+#   schedule:
+#     - cron: '30 15 * * SAT'
+#   workflow_dispatch:
+# 
 jobs:
   sonar:
     runs-on: [ubuntu-latest]

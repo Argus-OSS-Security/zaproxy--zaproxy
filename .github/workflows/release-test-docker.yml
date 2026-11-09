@@ -1,13 +1,14 @@
 name: Release Test Docker
-on:
-  workflow_dispatch:
-    inputs:
-      addons:
-        description: 'Add-ons to build and include, one per line: <clone-url> [branch] [gradle-project-path]. The project path is only needed for repos with many add-ons, e.g. :addOns:ascanrules'
-        required: true
-        default: 'https://github.com/zaproxy-addons/ptk.git'
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       addons:
+#         description: 'Add-ons to build and include, one per line: <clone-url> [branch] [gradle-project-path]. The project path is only needed for repos with many add-ons, e.g. :addOns:ascanrules'
+#         required: true
+#         default: 'https://github.com/zaproxy-addons/ptk.git'
+#         type: string
+# 
 jobs:
   publish:
     name: Build and Push Test Docker Image

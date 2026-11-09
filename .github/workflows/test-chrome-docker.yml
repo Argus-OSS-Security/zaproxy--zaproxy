@@ -1,10 +1,11 @@
 name: Test Chrome in nightly Docker
-on:
-  workflow_dispatch:
-  schedule:
-    # Every Monday at 5am
-    - cron:  '0 5 * * 1'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     # Every Monday at 5am
+#     - cron:  '0 5 * * 1'
+# 
 jobs:
   publish:
     name: Build Test Chrome Docker Image

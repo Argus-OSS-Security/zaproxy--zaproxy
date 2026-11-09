@@ -1,9 +1,10 @@
 name: 'LockBot'
 
-on:
-  schedule:
-    - cron: '0 1 * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: '0 1 * * *'
+# 
 permissions:
   issues: write
   pull-requests: write

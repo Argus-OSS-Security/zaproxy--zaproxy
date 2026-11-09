@@ -1,10 +1,11 @@
 name: Build and Run Integration Tests Docker
-on:
-  workflow_dispatch:
-  schedule:
-    # Every day at the 1am
-    - cron:  '0 1 * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     # Every day at the 1am
+#     - cron:  '0 1 * * *'
+# 
 jobs:
   publish:
     name: Build, Push and Run Docker Image
